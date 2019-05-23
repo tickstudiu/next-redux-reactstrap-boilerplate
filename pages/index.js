@@ -1,5 +1,6 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
+import Example from '../components/Common/example';
 
 class Index extends React.Component {
   static getInitialProps ({ reduxStore, req , pathname, query}) {
@@ -10,6 +11,7 @@ class Index extends React.Component {
     return (
       <div>
         hello world
+        <Example/>
       </div>
     )
   }
